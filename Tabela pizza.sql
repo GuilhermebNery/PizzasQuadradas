@@ -1,0 +1,10 @@
+
+-- Tabela PIZZA
+ CREATE TABLE pizza (
+    pizza_id SERIAL PRIMARY KEY,
+    nome VARCHAR(30) NOT NULL,
+    descricao VARCHAR(70) NOT NULL DEFAULT 'MOLHO, TOMATE, AZEITONA',
+    valor NUMERIC(3,2) NOT NULL
+ );
+
+SELECT * FROM pizza
